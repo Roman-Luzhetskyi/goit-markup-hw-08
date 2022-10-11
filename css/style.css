@@ -40,11 +40,9 @@ body {
         justify-content: space-between;
         }
 .section {
-   
+   padding: 94px 0;
 } 
 .header {
-    align-items: center;
-    padding: 24px 0 13px;
     border-bottom: 1px solid #ECECEC;
 }
  .navigation {
@@ -83,13 +81,15 @@ body {
     color: var(--brand-color);
    }
 .navigation-link {
+    display: block;
+    padding: 32px 0;
             font-weight: 500;
             font-size: 14px;
             line-height: calc(16/14);
             letter-spacing: 0.02em;
         color: var(--dark-text-color);
         text-decoration: none;
-           }
+}
 .contacts-list {
     display: flex;
     gap: 50px;
@@ -109,23 +109,14 @@ body {
     letter-spacing: 0.02em;
     color: var(--contacts-text-color);
     background-color: var(--light-text-color);
-    }
+}
 
-.hero-section {
+.hero {
         background: var(--bg-header-footer-color);
-            left: 0px;
-            top: 80px;
-            padding: 0px 15px;
-            margin-bottom: 94px;
-            display: flex;
-            justify-content: center;
-             align-items: center;
-        }
- .hero-container {
-    display: flex;
-    
-        align-items: center;
-     }       
+        text-align: center;
+        padding: 200px 0;
+}
+ 
 .hero-title {
     font-size: 44px;
     line-height: 1.36;
@@ -133,15 +124,20 @@ body {
     text-transform: uppercase;
         color:var(--light-text-color);
         margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
 }
 .hero-title {
         max-width: 696px;
         text-align: center;
             }
 .hero-baton {
-    
-        
-    }
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30/16);
+}
 .hero-baton {
         margin: 0 auto;
         padding: 10px 32px;
@@ -168,23 +164,15 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-.features-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 94px;
-    /* flex-basis: calc(100%-90px/4);*/
-    }
+
 .features-list {
          list-style: none;
      display: flex;
    gap: 30PX;
-
 }
 
 .features-item {
     max-width: 270px;
-    
 }
 
 .features-titel {
@@ -194,6 +182,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--gallery-text-color);
+    margin-bottom: 10px;
 }
 
 .features-text {
@@ -203,13 +192,14 @@ body {
    letter-spacing: 0.03em;
     color: var(--contacts-text-color);
 }
-
+.works-section {
+    padding-top: 0;
+}
 .works {
 display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 94px;
 }
 .works-title{
         font-weight: 700;
@@ -223,20 +213,18 @@ display: flex;
 .works-item {
     list-style: none;
 }
-
+.team-seation {
+    background-color: var(--primeri-white-colo);
+}
 .team {
 display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 94px;
 }
-
-
 .team-item {
     list-style: none;
 }
-
 .team-titel {
     font-weight: 700;
         font-size: 36px;
@@ -246,7 +234,9 @@ display: flex;
         margin-bottom: 50px;
         color: var(--gallery-text-color);
 }
-
+.team-script {
+    padding: 30px 0;
+}
 .team-text {
     font-weight: 400;
         font-size: 16px;
@@ -262,7 +252,8 @@ display: flex;
         line-height: calc(19/16);
         text-align: center;
         letter-spacing: 0.03em;
-            color:var(--gallery-text-color);
+        color:var(--gallery-text-color);
+        margin-bottom: 10px;
 }
 
 .logo-light {
@@ -270,8 +261,7 @@ display: flex;
 }
 .floor {
     background:var(--bg-header-footer-color);
-      padding: 60px 1154px 60px 215px; 
-    
+      padding: 60px 0; 
 }
 .floor-logo {
    margin-bottom: 20px;
@@ -279,16 +269,13 @@ display: flex;
 .floor-container {
 
     }
-.adres-item {
- 
+.adres{
+ font-style: normal;
 }
-
 .adres-list {
     list-style: none;
        list-style: none;
        text-decoration: none;
-       margin-bottom: 9px;
-      
 }
 .adres-text {
         font-size: 14px;
@@ -298,6 +285,9 @@ display: flex;
 }
 .adres-item {
    margin-bottom: 9px;
+}
+.adres-item :last-child {
+    margin-bottom: 0;
 }
 .adres-link {
         font-size: 14px;
@@ -311,15 +301,12 @@ display: flex;
 }
 
 .filter {
+    display: flex;
     list-style: none;
-    text-decoration: none;
+    justify-content: center;
     margin-bottom: 50px;
  }
-.filter-container {
-    display: flex;
-    justify-content: center;
- 
-}
+
 .filter-item {
         font-weight: 500;
         font-size: 16px;
@@ -327,14 +314,12 @@ display: flex;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--gallery-text-color);
-       margin-right: 9px;
+       margin-right: 8px;
 }
 .filter-item:last-child {
     margin-right: 0;
 }
-.filter-item {
-        display: inline;
-        }
+
 .filter-button {
     cursor: pointer;
     font-family: 'Roboto';
@@ -355,40 +340,39 @@ display: flex;
 .gallery {
         list-style: none;
         text-decoration: none;
-        /*display: inline-flex;
-        flex-wrap: wrap;
-        gap: 30px;*/
+        gap: 30px;
         display: flex;
-            flex-wrap: wrap;
-            flex-basis: calc((100%-60)/3);
-        }
-.gallery-container {
-        
-        }
-
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px) / 3);
+}
 .gallery-item {
-      display: flex;
-      flex-wrap: wrap;
-      flex-basis: calc((100%-60)/3);
+      /*flex-wrap: wrap;*/
+      flex-basis: calc((100% - 60px) / 3);
 }
 .gallery-titel {
-    max-width: 322px;
         font-weight: 700;
         font-size: 18px;
         line-height: calc(36/18);
         letter-spacing: 0.06em;
         color: var(--gallery-text-color);
-       margin: 20px 24px 4px 24px;
-}
+        margin-bottom: 4px;
+    }
 .gallery-text {
-    max-width: 322px;
         font-weight: 400;
         font-size: 14px;
         line-height: calc(24/12);
         letter-spacing: 0.03em;
         color:var(--contacts-text-color);
         margin: 0px 24px 20px 24px;
-}.img {
+}
+.card-content {
+    padding: 20px 24px ;
+    border: 1px solid #EEEEEE;
+}
+.card-content {
+    border-top: 0;
+}
+.img {
     display: block;
     max-width: 100%;
     height: auto;
