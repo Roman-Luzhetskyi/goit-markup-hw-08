@@ -119,6 +119,7 @@ svg:not(:root) {
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--brand-color);
+    fill: var(--brand-color);
 }
 
 .contacts-item {
@@ -129,10 +130,6 @@ svg:not(:root) {
   }
   .contacts-icon {
     margin-right: 10px;
-  }
-  .contacts-icon:hover,
-  .contacts-icon:focus {
-      fill: var(--brand-color);
   }
   
 .hero {
