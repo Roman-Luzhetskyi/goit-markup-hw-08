@@ -31,7 +31,7 @@ body {
     padding: 0 15px;
         /*outline: 2px solid rgb(204, 255, 0);*/
 }
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -95,7 +95,7 @@ svg:not(:root) {
     letter-spacing: 0.02em;
     color: var(--dark-text-color);
     text-decoration: none;
-    transition: color 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:hover,
 .navigation-link:focus
@@ -125,13 +125,16 @@ svg:not(:root) {
     text-decoration: none;
    }
 .contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--contacts-text-color);
     background-color: var(--light-text-color);
-    transition: fill 250ms, color 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -197,7 +200,7 @@ svg:not(:root) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: transparent;
-    transition: color 250ms, background-color 250ms ;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
 }
 .hero-baton:hover,
@@ -293,7 +296,6 @@ svg:not(:root) {
     text-transform: uppercase;
     bottom: 0;
     margin: 0;
-    padding: 27px 0;
     width: 100%;
     height: 70px;
     color: var(--light-text-color);
@@ -371,7 +373,7 @@ svg:not(:root) {
     bottom: 0%;
     background: rgba(255, 255, 255, 0.1);
     width: 100%;
-    transition: fill 250ms, background-color 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teams-link:hover,
@@ -411,7 +413,7 @@ svg:not(:root) {
     align-items: center;
     justify-content: center;
     fill: var(--icons-color-second);
-    transition: fill 250ms, border-color 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -460,7 +462,7 @@ display: flex;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
-    transition: color 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adres-link:hover,
 .adres-link:focus {
@@ -508,7 +510,7 @@ display: flex;
     top: 0%;
     bottom: 0%;
     background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc-link:hover,
 .soc-link:focus {
@@ -548,8 +550,9 @@ display: flex;
     color: var(--gallery-text-color);
     background-color: var(--primeri-white-colo);
     padding: 6px 22px;
+    border-radius: 4px;
     border: transparent;
-    transition: box-shadow 250ms, color 250ms, background-color 250ms;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -586,7 +589,7 @@ display: flex;
 .gallery-link {
     display: block;
     text-decoration: none;
-    transition: box-shadow 250ms;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-link:hover,
 .gallery-link:focus {
@@ -611,12 +614,16 @@ display: flex;
     height: 100%;
     width: 100%;
     padding: 63px 24px;
+    font-size: 18px;
+    line-height: calc(28/18);
+    letter-spacing: 0.03em;
+    font-style: normal;
     color: var(--light-text-color);
     transform: translateY(100%);
     background-color: rgba(33, 150, 243, 0.9);
-    transition: transform 250ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-img:hover .card-description {
+.gallery-link:hover .card-description {
     transform: translateY(0);
 }
 /*modal*/
@@ -628,7 +635,7 @@ display: flex;
     height: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms, visibility 250ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
     opacity: 0;
@@ -642,7 +649,7 @@ display: flex;
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
-    background-color: var(--primeri-white-colo) ;
+    background-color: var(--light-text-color) ;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
