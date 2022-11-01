@@ -370,7 +370,7 @@
     <footer class="floor">
       <div class="container">
         <div class="floor-container">
-          <div>
+          <div class="floor-container-address">
             <div class="floor-logo">
               <a class="logo" href="./index.html"
                 >Web<span class="logo-light">Studio</span>
@@ -442,7 +442,7 @@
           </div>
           <div class="email-input">
             <p class="email-input-title">Підпишіться на розсилку</p>
-            <form  class="email-form" name="footer-form">
+            <form class="email-form" name="footer-form">
               <input
                 class="email-input-labe"
                 type="email"
@@ -469,7 +469,7 @@
             <use href="./images/icon.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="form-titel">Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="form-titel">Залиште свої дані, ми вам передзвонимо</p>
         <form name="contact-form">
           <label class="form-label" for="person-name">Ім'я</label>
           <div class="form-contact">
@@ -515,17 +515,17 @@
             placeholder="Введіть текст"
           ></textarea>
           <div class="checkbox">
-            <input
-              class="checkbox-input visually-hidden"
-              id="terms-checkbox"
-              type="checkbox"
-              name="terms-checkbox"
-            />
-            <svg class="form-icon" width="16px" height="15px">
-              <use href="./images/icon.svg#icon-check"></use>
-            </svg>
-            <label class="checkbox-label" for="terms-checkbox"
-              >Погоджуюся з розсилкою та приймаю
+            <label class="checkbox-label" for="terms-checkbox">
+              <input
+                class="checkbox-input visually-hidden"
+                id="terms-checkbox"
+                type="checkbox"
+                name="terms-checkbox"
+              />
+              <svg class=".form-checkbox-icon" width="16px" height="15px">
+                <use href="./images/icon.svg#icon-check"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
               <a class="terms-link" href="#">Умови договору</a>
             </label>
           </div>
