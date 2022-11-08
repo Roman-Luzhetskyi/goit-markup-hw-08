@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: var(--roboto);
     color: var(--gallery-text-color);
     background: var(--light-text-color);
 }

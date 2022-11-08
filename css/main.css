@@ -12,6 +12,8 @@
   --form-border: rgba(33, 33, 33, 0.2);
   --box-shadow-color: rgba(0, 0, 0, 0.15);
   --box-shadow-second: rgba(0, 0, 0, 0.12);
+  --roboto: "Roboto" , "sans-serif";
+  --raleway: "Raleway" , "sans-serif";
 }
 
 .current {
@@ -32,7 +34,7 @@
 }
 
 body {
-  font-family: "Roboto", "sans-serif";
+  font-family: var(--roboto);
   color: var(--gallery-text-color);
   background: var(--light-text-color);
 }
@@ -125,7 +127,7 @@ a {
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: var(--raleway);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
@@ -268,7 +270,7 @@ a {
 
 .hero__baton {
   display: block;
-  font-family: "Roboto";
+  font-family: var(--roboto);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -544,7 +546,7 @@ a {
 
 .filter__button {
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: var(--roboto);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -587,10 +589,10 @@ a {
 .gallery__link {
   display: block;
   text-decoration: none;
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
+  transition: -webkit-box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
 }
 .gallery__link:hover, .gallery__link:focus {
   -webkit-box-shadow: 0px 1px 1px var(--box-shadow-second), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -702,7 +704,7 @@ a {
 }
 
 .soc__title {
-  font-family: "Roboto";
+  font-family: var(--roboto);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
