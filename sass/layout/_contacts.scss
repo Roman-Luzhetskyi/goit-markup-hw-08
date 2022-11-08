@@ -15,7 +15,7 @@
     letter-spacing: 0.02em;
     color: var(--contacts-text-color);
     background-color: var(--light-text-color);
-    transition: fill 250ms var(--timing-function), color 250ms var(--timing-function);
+    transition: fill var(--time) var(--timing-function), color var(--time) var(--timing-function);
 
     &:hover,
     &:focus {

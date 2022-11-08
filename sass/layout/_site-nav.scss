@@ -28,7 +28,7 @@
     letter-spacing: 0.02em;
     color: var(--dark-text-color);
     text-decoration: none;
-    transition: color 250ms var(--timing-function);
+    transition: color var(--time) var(--timing-function);
     &:hover,
     &:focus {
         color: var(--brand-color);

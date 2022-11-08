@@ -6,7 +6,7 @@
     height: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+    transition: opacity var(--time) var(--timing-function), visibility var(--time) var(--timing-function);
 }
 
 .is-hidden {

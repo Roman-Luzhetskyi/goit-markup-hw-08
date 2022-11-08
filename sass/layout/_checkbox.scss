@@ -34,8 +34,8 @@
     height: 15px;
     border: 2px solid var(--gallery-text-color);
     border-radius: 2px;
-    transition: background-color 250ms var(--timing-function);
-    fill-opacity: 250ms var(--timing-function);
+    transition: background-color var(--time) var(--timing-function);
+    fill-opacity: var(--time) var(--timing-function);
     margin-right: 7px;
 }
 

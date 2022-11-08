@@ -1,5 +1,6 @@
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
   --brand-color: #2196f3;
   --second-brand-color: #188CE8;
   --primeri-white-colo: #f5f4fa;
@@ -179,8 +180,8 @@ a {
   letter-spacing: 0.02em;
   color: var(--dark-text-color);
   text-decoration: none;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition: color var(--time) var(--timing-function);
+  transition: color var(--time) var(--timing-function);
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--brand-color);
@@ -211,8 +212,8 @@ a {
   letter-spacing: 0.02em;
   color: var(--contacts-text-color);
   background-color: var(--light-text-color);
-  -webkit-transition: fill 250ms var(--timing-function), color 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function), color 250ms var(--timing-function);
+  -webkit-transition: fill var(--time) var(--timing-function), color var(--time) var(--timing-function);
+  transition: fill var(--time) var(--timing-function), color var(--time) var(--timing-function);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--brand-color);
@@ -282,8 +283,8 @@ a {
           box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
   border: transparent;
-  -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  -webkit-transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function);
+  transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function);
   margin: 0 auto;
   cursor: pointer;
 }
@@ -470,8 +471,8 @@ a {
   bottom: 0%;
   background: rgba(255, 255, 255, 0.1);
   width: 100%;
-  -webkit-transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  -webkit-transition: fill var(--time) var(--timing-function), background-color var(--time) var(--timing-function);
+  transition: fill var(--time) var(--timing-function), background-color var(--time) var(--timing-function);
 }
 .team-icons__link:hover, .team-icons__link:focus {
   fill: var(--light-text-color);
@@ -512,8 +513,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   fill: var(--icons-color-second);
-  -webkit-transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+  -webkit-transition: fill var(--time) var(--timing-function), border-color var(--time) var(--timing-function);
+  transition: fill var(--time) var(--timing-function), border-color var(--time) var(--timing-function);
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--brand-color);
@@ -558,10 +559,10 @@ a {
   padding: 6px 22px;
   border-radius: 4px;
   border: transparent;
-  -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), color 250ms var(--timing-function), background-color 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function), -webkit-box-shadow var(--time) var(--timing-function);
+  transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function), -webkit-box-shadow var(--time) var(--timing-function);
+  transition: box-shadow var(--time) var(--timing-function), color var(--time) var(--timing-function), background-color var(--time) var(--timing-function);
+  transition: box-shadow var(--time) var(--timing-function), color var(--time) var(--timing-function), background-color var(--time) var(--timing-function), -webkit-box-shadow var(--time) var(--timing-function);
 }
 .filter__button:hover, .filter__button:focus {
   background-color: var(--brand-color);
@@ -589,10 +590,10 @@ a {
 .gallery__link {
   display: block;
   text-decoration: none;
-  -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: -webkit-box-shadow var(--time) var(--timing-function);
+  transition: -webkit-box-shadow var(--time) var(--timing-function);
+  transition: box-shadow var(--time) var(--timing-function);
+  transition: box-shadow var(--time) var(--timing-function), -webkit-box-shadow var(--time) var(--timing-function);
 }
 .gallery__link:hover, .gallery__link:focus {
   -webkit-box-shadow: 0px 1px 1px var(--box-shadow-second), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -646,10 +647,10 @@ a {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition: -webkit-transform 250ms var(--timing-function);
-  transition: -webkit-transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  -webkit-transition: -webkit-transform var(--time) var(--timing-function);
+  transition: -webkit-transform var(--time) var(--timing-function);
+  transition: transform var(--time) var(--timing-function);
+  transition: transform var(--time) var(--timing-function), -webkit-transform var(--time) var(--timing-function);
 }
 
 .footer {
@@ -692,8 +693,8 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition: color var(--time) var(--timing-function);
+  transition: color var(--time) var(--timing-function);
 }
 .adres__link:hover, .adres__link:focus {
   color: var(--brand-color);
@@ -753,8 +754,8 @@ a {
   top: 0%;
   bottom: 0%;
   background: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
+  -webkit-transition: background-color var(--time) var(--timing-function);
+  transition: background-color var(--time) var(--timing-function);
 }
 .soc-links__link:hover, .soc-links__link:focus {
   background-color: var(--brand-color);
@@ -847,8 +848,8 @@ a {
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  -webkit-transition: opacity var(--time) var(--timing-function), visibility var(--time) var(--timing-function);
+  transition: opacity var(--time) var(--timing-function), visibility var(--time) var(--timing-function);
 }
 
 .is-hidden {
@@ -1003,9 +1004,9 @@ a {
   height: 15px;
   border: 2px solid var(--gallery-text-color);
   border-radius: 2px;
-  -webkit-transition: background-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-  fill-opacity: 250ms var(--timing-function);
+  -webkit-transition: background-color var(--time) var(--timing-function);
+  transition: background-color var(--time) var(--timing-function);
+  fill-opacity: var(--time) var(--timing-function);
   margin-right: 7px;
 }
 

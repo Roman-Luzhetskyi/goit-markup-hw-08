@@ -23,7 +23,7 @@
     bottom: 0%;
     background: rgba(255, 255, 255, 0.1);
     width: 100%;
-    transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+    transition: fill var(--time) var(--timing-function), background-color var(--time) var(--timing-function);
     &:hover,
     &:focus {
         fill: var(--light-text-color);

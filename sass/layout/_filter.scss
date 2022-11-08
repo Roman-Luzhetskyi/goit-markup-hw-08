@@ -32,7 +32,7 @@
     padding: 6px 22px;
     border-radius: 4px;
     border: transparent;
-    transition: box-shadow 250ms var(--timing-function), color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+    transition: box-shadow var(--time) var(--timing-function), color var(--time) var(--timing-function), background-color var(--time) var(--timing-function);
 
 &:hover,
 &:focus {

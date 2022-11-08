@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     fill: var(--icons-color-second);
-    transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+    transition: fill var(--time) var(--timing-function), border-color var(--time) var(--timing-function);
 
     &:hover,
     &:focus {

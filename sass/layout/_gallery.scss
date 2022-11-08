@@ -13,7 +13,7 @@
 .gallery__link {
     display: block;
     text-decoration: none;
-    transition: box-shadow 250ms var(--timing-function);
+    transition: box-shadow var(--time) var(--timing-function);
 
 &:hover,
 &:focus {
@@ -65,5 +65,5 @@
     color: var(--light-text-color);
     transform: translateY(100%);
     background-color: rgba(33, 150, 243, 0.9);
-    transition: transform 250ms var(--timing-function);
+    transition: transform var(--time) var(--timing-function);
 }
