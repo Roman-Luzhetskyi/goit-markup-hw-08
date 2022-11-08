@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -129,10 +129,10 @@
           </ul>
         </div>
       </section>
-      <section class="section works-section">
+      <section class="section works">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="works">
+          <ul class="works__list">
             <li class="works__item">
               <img
                 src="./images/box1.jpg"
@@ -160,10 +160,10 @@
           </ul>
         </div>
       </section>
-      <section class="section team-section">
+      <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team">
+          <ul class="team__list">
             <li class="team-card">
               <img src="./images/img1.jpg" alt="Ігор Дем'яненко" width="270" />
               <div class="team__script">
@@ -374,8 +374,8 @@
                 >Web<span class="logo__light">Studio</span>
               </a>
             </div>
-            <address class="adress">
-              <ul class="adres">
+            <address class="adres">
+              <ul class="adres__list">
                 <li class="adres__item">
                   <a
                     class="adres__text"
@@ -440,7 +440,7 @@
           </div>
           <div class="email-input">
             <p class="email-input__title">Підпишіться на розсилку</p>
-            <form class="email-form" name="footer-form">
+            <form class="email-input__form" name="footer-form">
               <input
                 class="email-input__labe"
                 type="email"
@@ -467,51 +467,53 @@
             <use href="./images/icon.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="form__titel">Залиште свої дані, ми вам передзвонимо</p>
-        <form name="contact-form">
-          <label class="form-label" for="person-name">Ім'я</label>
-          <div class="form__contact">
-            <input
-              class="form__input"
-              id="person-name"
-              type="text"
-              name="person-name"
-            />
-            <svg class="form__icon" width="18px" height="18px">
-              <use href="./images/icon.svg#icon-person"></use>
-            </svg>
-          </div>
-          <label class="form__label" for="person-phone">Телефон</label>
-          <div class="form__contact">
-            <input
-              class="form__input"
-              id="person-phone"
-              type="tel"
-              name="person-phone"
-            />
-            <svg class="form__icon" width="18px" height="18px">
-              <use href="./images/icon.svg#icon-phone"></use>
-            </svg>
-          </div>
-          <label class="form__label" for="person-mail">Пошта</label>
-          <div class="form__contact">
-            <input
-              class="form__input"
-              id="person-mail"
-              type="email"
-              name="person-mail"
-            />
-            <svg class="form__icon" width="18px" height="18px">
-              <use href="./images/icon.svg#icon-email"></use>
-            </svg>
-          </div>
-          <label class="form__label" for="person-coment">Коментар</label>
-          <textarea
-            class="form__coment"
-            name="person-coment"
-            id="person-coment"
-            placeholder="Введіть текст"
-          ></textarea>
+        <form class="modal-form">
+          <p class="modal-form__titel">Залиште свої дані, ми вам передзвонимо</p>
+          <form name="contact-form">
+            <label class="form-label" for="person-name">Ім'я</label>
+            <div class="modal-form__contact">
+              <input
+                class="modal-form__input"
+                id="person-name"
+                type="text"
+                name="person-name"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/icon.svg#icon-person"></use>
+              </svg>
+            </div>
+            <label class="modal-form__label" for="person-phone">Телефон</label>
+            <div class="modal-form__contact">
+              <input
+                class="modal-form__input"
+                id="person-phone"
+                type="tel"
+                name="person-phone"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/icon.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="modal-form__label" for="person-mail">Пошта</label>
+            <div class="modal-form__contact">
+              <input
+                class="modal-form__input"
+                id="person-mail"
+                type="email"
+                name="person-mail"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/icon.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label class="modal-form__label" for="person-coment">Коментар</label>
+            <textarea
+              class="modal-form__coment"
+              name="person-coment"
+              id="person-coment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </form>
           <div class="checkbox">
             <label class="checkbox__label" for="terms-checkbox">
               <input
@@ -527,7 +529,7 @@
               <a class="terms-link" href="#">Умови договору</a>
             </label>
           </div>
-          <button class="contact-form__submit-baton" type="submit">
+          <button class="hero__baton" type="submit">
             Відправити
           </button>
         </form>

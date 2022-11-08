@@ -1,0 +1,44 @@
+.filter {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__item {
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--gallery-text-color);
+    margin-right: 8px;
+    font-weight: 500;
+
+&:last-child {
+    margin-right: 0;
+}    
+}
+.filter__button {
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--gallery-text-color);
+    background-color: var(--primeri-white-colo);
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: transparent;
+    transition: box-shadow 250ms var(--timing-function), color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+
+&:hover,
+&:focus {
+    background-color: var(--brand-color);
+    color: var(--light-text-color);
+    box-shadow: 0px 1px 1px var(--box-shadow-second), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+

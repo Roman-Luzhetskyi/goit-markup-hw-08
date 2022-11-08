@@ -1,0 +1,63 @@
+.modal-form__titel {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: var(--gallery-text-color)
+}
+
+.modal-form__label {
+    display: block;
+    line-height: calc(14/12);
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: var(--contacts-text-color);
+    margin-bottom: 4px;
+}
+
+.modal-form__contact {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal-form__input {
+    width: 100%;
+    padding: 11px 11px 11px 44px;
+    border: 1px solid var(--form-border);
+    border-radius: 4px;
+    outline: none;
+&:focus {
+    border-color: var(--brand-color);
+}    
+}
+.modal-form__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+.modal-form__contact:focus-within & {
+    fill: var(--brand-color);
+}    
+}
+.modal-form__coment {
+    display: block;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    height: 120px;
+    width: 100%;
+    resize: none;
+    border: 1px solid var(--form-border);
+    border-radius: 4px;
+    outline: none;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+
+&:focus {
+    border-color: var(--brand-color);
+}    
+}
+

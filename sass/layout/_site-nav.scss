@@ -1,0 +1,38 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.site-nav__list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
+.site-nav__item {
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--gallery-text-color);
+    font-weight: 500;
+}
+
+.site-nav__link {
+    display: block;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--dark-text-color);
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+    
+    &:hover,
+    &:focus {
+        color: var(--brand-color);
+    }
+}
+
