@@ -267,6 +267,7 @@ a {
 }
 
 .hero__baton {
+  display: block;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -595,8 +596,12 @@ a {
   -webkit-box-shadow: 0px 1px 1px var(--box-shadow-second), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px var(--box-shadow-second), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.gallery__link:hover .gallery__card-description, .gallery__link:focus .gallery__card-description {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
-.gallery-titel {
+.gallery__titel {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -643,12 +648,6 @@ a {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-}
-
-.gallery__link:hover .gallery__card-description,
-.gallery__link:focus .gallery__card-description {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .footer {
@@ -918,6 +917,9 @@ a {
   position: relative;
   margin-bottom: 10px;
 }
+.modal-form__contact:focus-within .modal-form__icon {
+  fill: var(--brand-color);
+}
 
 .modal-form__input {
   width: 100%;
@@ -936,9 +938,6 @@ a {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-.modal-form__contact:focus-within .modal-form__icon {
-  fill: var(--brand-color);
 }
 
 .modal-form__coment {
@@ -968,6 +967,13 @@ a {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+.checkbox__input:checked + .checkbox__icon {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  border: none;
+  fill: var(--primeri-white-colo);
+  fill-opacity: 1;
 }
 
 .checkbox__label {
@@ -999,14 +1005,6 @@ a {
   transition: background-color 250ms var(--timing-function);
   fill-opacity: 250ms var(--timing-function);
   margin-right: 7px;
-}
-
-.checkbox__input:checked + .checkbox__icon {
-  background-color: var(--brand-color);
-  border-color: var(--brand-color);
-  border: none;
-  fill: var(--primeri-white-colo);
-  fill-opacity: 1;
 }
 
 .checkbox__link {

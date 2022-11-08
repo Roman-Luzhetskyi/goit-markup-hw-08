@@ -5,6 +5,14 @@
 
 .checkbox__input {
     appearance: none;
+
+&:checked+.checkbox__icon {
+        background-color: var(--brand-color);
+        border-color: var(--brand-color);
+        border: none;
+        fill: var(--primeri-white-colo);
+        fill-opacity: 1;
+    }
 }
 
 .checkbox__label {
@@ -31,13 +39,7 @@
     margin-right: 7px;
 }
 
-.checkbox__input:checked+.checkbox__icon{
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
-    border: none;
-    fill: var(--primeri-white-colo);
-    fill-opacity: 1;
-}    
+
 
 .checkbox__link {
     font-size: 14px;

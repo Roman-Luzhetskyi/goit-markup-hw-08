@@ -29,7 +29,6 @@
     color: var(--dark-text-color);
     text-decoration: none;
     transition: color 250ms var(--timing-function);
-    
     &:hover,
     &:focus {
         color: var(--brand-color);

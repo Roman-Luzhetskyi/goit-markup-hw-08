@@ -18,16 +18,17 @@
 &:hover,
 &:focus {
     box-shadow: 0px 1px 1px var(--box-shadow-second), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}    
+}  
+&:hover .gallery__card-description,
+&:focus .gallery__card-description {
+    transform: translateY(0);
 }
-
-
-
-.gallery-titel {
+}
+.gallery__titel {
     font-size: 18px;
-    line-height: calc(36/18);
+    line-height: 2;
     letter-spacing: 0.06em;
-   color: var(--gallery-text-color);
+    color: var(--gallery-text-color);
     margin-bottom: 4px;
     font-weight: 700;
 }
@@ -39,8 +40,6 @@
     color: var(--contacts-text-color);
     font-weight: 400;
 }
-
-
 .gallery__card-content {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
@@ -67,9 +66,4 @@
     transform: translateY(100%);
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform 250ms var(--timing-function);
-}
-
-.gallery__link:hover .gallery__card-description,
-.gallery__link:focus .gallery__card-description {
-    transform: translateY(0);
 }

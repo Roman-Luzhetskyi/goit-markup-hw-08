@@ -1,7 +1,6 @@
 .soc {
     margin-left: 70px;
 }
-
 .soc__title {
     font-family: 'Roboto';
     font-weight: 700;
@@ -13,20 +12,17 @@
     margin-bottom: 20px;
     font-style: normal;
 }
-
 .soc-links {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-
 .soc-links__item {
     list-style: none;
     height: 44px;
     width: 44px;
 }
-
 .soc-links__link {
     display: flex;
     width: 100%;

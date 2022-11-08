@@ -1,25 +1,21 @@
 .team {
     background-color: var(--primeri-white-colo);
 }
-
 .team__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
-
 .team__card {
     list-style: none;
     box-shadow: 0px 1px 3px var(--box-shadow-second), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--light-text-color);
 }
-
 .team__script {
     padding: 30px 0;
 }
-
 .team__text {
     font-weight: 400;
     line-height: calc(19/16);
@@ -29,7 +25,6 @@
     margin-bottom: 16px;
     color: var(--contacts-text-color);
 }
-
 .team__hading {
     font-weight: 500;
     line-height: calc(19/16);

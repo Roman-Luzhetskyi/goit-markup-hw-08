@@ -20,6 +20,9 @@
 .modal-form__contact {
     position: relative;
     margin-bottom: 10px;
+&:focus-within .modal-form__icon {
+        fill: var(--brand-color);
+    }
 }
 
 .modal-form__input {
@@ -37,10 +40,6 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-
-.modal-form__contact:focus-within & {
-    fill: var(--brand-color);
-}    
 }
 .modal-form__coment {
     display: block;
