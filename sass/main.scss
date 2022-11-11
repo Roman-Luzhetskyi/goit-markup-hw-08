@@ -1,5 +1,4 @@
 @import './utils/variables';
-@import './utils/current';
 @import './utils/placeholders';
 
 @import './base/common';
@@ -16,7 +15,7 @@
 @import './layout/features';
 @import './layout/works';
 @import './layout/team';
-@import './layout/team-icons';
+@import './layout/social.scss';
 @import './layout/clients';
 @import './layout/filter';
 @import './layout/gallery';

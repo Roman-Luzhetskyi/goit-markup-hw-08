@@ -1,20 +1,26 @@
 .team {
-    background-color: var(--primeri-white-colo);
-}
-.team__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
-.team__card {
+.team__item {
     list-style: none;
     box-shadow: 0px 1px 3px var(--box-shadow-second), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--light-text-color);
 }
-.team__script {
+.team__box {
     padding: 30px 0;
+}
+.team__title {
+    font-weight: 500;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--gallery-text-color);
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 .team__text {
     font-weight: 400;
@@ -24,13 +30,4 @@
     font-size: 16px;
     margin-bottom: 16px;
     color: var(--contacts-text-color);
-}
-.team__hading {
-    font-weight: 500;
-    line-height: calc(19/16);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--gallery-text-color);
-    margin-bottom: 10px;
-    font-size: 16px;
 }

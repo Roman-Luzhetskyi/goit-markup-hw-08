@@ -1,16 +1,16 @@
-.team-icons {
+.social {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.team-icons__item {
+.social__item {
     width: 44px;
     height: 44px;
     list-style: none;
 }
 
-.team-icons__link {
+.social__link {
     display: flex;
     height: 100%;
     border-radius: 50%;
