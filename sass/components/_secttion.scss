@@ -1,14 +1,23 @@
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
+
+@media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 .section__title {
-    font-size: 36px;
-    line-height: calc(42/36);
+    font-size: 28px;
+    line-height: calc(33/28);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--gallery-text-color);
     margin-bottom: 50px;
     font-weight: 700;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: calc(42/36);
+        }
 }
 .section--none-padding-top {
     padding-top: 0;

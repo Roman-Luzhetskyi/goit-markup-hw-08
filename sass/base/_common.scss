@@ -11,7 +11,9 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+li,
+button {
     padding: 0;
     margin: 0;
 }
@@ -35,6 +37,13 @@ ul {
 a {
     text-decoration: none;
 }
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -46,4 +55,14 @@ a {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+section, header, footer, .backdrop {
+    display: none;
+}
+.block {
+    display: block;
+}
+.icon {
+    display: block;
+    fill: currentColor;
 }

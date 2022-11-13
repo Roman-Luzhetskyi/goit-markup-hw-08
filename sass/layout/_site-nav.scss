@@ -1,14 +1,21 @@
 .nav {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: space-between;    
+    }
 }
 
-
 .site-nav {
-    list-style: none;
-    display: flex;
+    display: none;
     gap: 50px;
     margin-left: 93px;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    }
 }
 
 .site-nav__item {
@@ -51,3 +58,14 @@
     border-radius: 2px;
 }
 
+.header__burger-menu {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.js-open-menu {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 10px 0;
+}

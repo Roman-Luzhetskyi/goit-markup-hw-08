@@ -6,4 +6,17 @@
 .footer-container {
     align-items: baseline;
     display: flex;
+    text-align: center;
+    gap: 60px;
+
+@media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    }
+@media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 165px;
+}
 }

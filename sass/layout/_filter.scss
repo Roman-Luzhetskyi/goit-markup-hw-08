@@ -1,8 +1,17 @@
 .filter {
     display: flex;
-    list-style: none;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 15px 8px;
+
+@media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+@media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+}
 }
 
 .filter__item {
@@ -11,12 +20,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--gallery-text-color);
-    margin-right: 8px;
     font-weight: 500;
-
-&:last-child {
-    margin-right: 0;
-}    
 }
 .filter__button {
     cursor: pointer;

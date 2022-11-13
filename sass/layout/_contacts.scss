@@ -1,8 +1,21 @@
 .contacts {
-    display: flex;
-    gap: 50px;
-    list-style: none;
     text-decoration: none;
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+            }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 50px;
+
+    }
 }
 
 .contacts__link {
@@ -27,8 +40,14 @@
 .contacts__item {
     display: flex;
     align-items: center;
-    justify-content: center;
     fill: var(--contacts-text-color);
+    padding: 0;
+
+    @media screen and (max-width: 1199px){ 
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+}
 }
 
 .contacts__icon {

@@ -18,13 +18,18 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header block">
       <div class="container">
         <div class="header__container">
           <nav class="nav">
             <a class="logo" href="./index.html"
               >Web<span class="logo__dark">Studio</span>
             </a>
+            <button class="header__burger-menu js-open-menu">
+              <svg class="contacts__icon" width="40px" height="40px">
+                <use href="./images/icon.svg#icon-envelope-hover"></use>
+              </svg>
+            </button>
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a
@@ -71,7 +76,7 @@
       </div>
     </header>
     <main>
-      <section class="hero hero__overlay">
+      <section class="hero block hero__overlay">
         <div class="cntainer">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button" type="button" data-modal-open>
@@ -79,7 +84,7 @@
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="section block">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="features">
@@ -133,7 +138,7 @@
           </ul>
         </div>
       </section>
-      <section class="section section--none-padding-top">
+      <section class="section servises block section--none-padding-top">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="works">
@@ -164,7 +169,7 @@
           </ul>
         </div>
       </section>
-      <section class="section team--background-color">
+      <section class="section block team--background-color">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
@@ -319,7 +324,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section block">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients">
@@ -369,7 +374,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer block">
       <div class="container">
         <div class="footer-container">
           <div class="footer-address">
@@ -452,7 +457,7 @@
                 id="email-input"
                 placeholder="E-mail"
               />
-              <button class="email-input__baton" type="button">
+              <button class="email-input__button" type="button">
                 Підписатися
                 <svg class="email-input__icon" width="24px" height="24px">
                   <use href="./images/icon.svg#icon-send"></use>
@@ -463,6 +468,64 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg class="icon" width="40px" height="40px">
+          <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--current"
+              href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts__item">
+            <a
+              class="mobile-menu-contacts__link"
+              href="mailto:info@devstudio.com"
+              style="text-decoration: none"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-menu-contacts__item">
+            <a
+              class="mobile-menu-contacts__link"
+              href="tel:+380961111111"
+              style="text-decoration: none"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <ul class="social-mobile">
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Instagram </a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Twitter </a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Facebook </a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Linkedin </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-baton" type="button" data-modal-close>
@@ -542,5 +605,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
