@@ -1,11 +1,16 @@
 .modal-form__titel {
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23/20);
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
-    color: var(--gallery-text-color)
+    color: var(--gallery-text-color);
+
+
+    @media screen and (min-width: 1200px) {
+            line-height: 1.15;
+        }
 }
 
 .modal-form__label {
@@ -58,5 +63,9 @@
 &:focus {
     border-color: var(--brand-color);
 }    
+}
+
+.hero__button {
+    @extend %hero__button
 }
 
