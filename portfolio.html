@@ -25,16 +25,21 @@
             <a class="logo" href="./index.html"
               >Web<span class="logo__dark">Studio</span>
             </a>
+            <button class="header__burger-menu js-open-menu">
+              <svg class="icon" width="40px" height="40px">
+                <use href="./images/icon.svg#icon-menu"></use>
+              </svg>
+            </button>
             <ul class="site-nav">
-              <li class="site-nav__item">
-                <a class="site-nav__link" href="./index.html">Студія</a>
-              </li>
               <li class="site-nav__item">
                 <a
                   class="site-nav__link site-nav__link--current"
-                  href="./portfolio.html"
-                  >Портфоліо</a
+                  href="./index.html"
+                  >Студія</a
                 >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="site-nav__item">
                 <a class="site-nav__link" href="#">Контакти</a>
@@ -397,7 +402,7 @@
                 id="email-input"
                 placeholder="E-mail"
               />
-              <button class="email-input__baton" type="button">
+              <button class="email-input__button" type="button">
                 Підписатися
                 <svg class="email-input__icon" width="24px" height="24px">
                   <use href="./images/icon.svg#icon-send"></use>
@@ -408,5 +413,142 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg class="icon" width="40px" height="40px">
+          <use href="./images/icon.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--current"
+              href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts__item">
+            <a
+              class="mobile-menu-contacts__link"
+              href="mailto:info@devstudio.com"
+              style="text-decoration: none"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-menu-contacts__item">
+            <a
+              class="mobile-menu-contacts__link"
+              href="tel:+380961111111"
+              style="text-decoration: none"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <ul class="social-mobile">
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Instagram </a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Twitter </a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Facebook </a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Linkedin </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close-button" type="button" data-modal-close>
+          <a href></a>
+          <svg width="11px" height="11px">
+            <use href="./images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p class="modal-form__titel">
+            Залиште свої дані, ми вам передзвонимо
+          </p>
+          <form name="contact-form">
+            <label class="form-label" for="person-name">Ім'я</label>
+            <div class="modal-form__contact">
+              <input
+                class="modal-form__input"
+                id="person-name"
+                type="text"
+                name="person-name"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/icon.svg#icon-person"></use>
+              </svg>
+            </div>
+            <label class="modal-form__label" for="person-phone">Телефон</label>
+            <div class="modal-form__contact">
+              <input
+                class="modal-form__input"
+                id="person-phone"
+                type="tel"
+                name="person-phone"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/icon.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="modal-form__label" for="person-mail">Пошта</label>
+            <div class="modal-form__contact">
+              <input
+                class="modal-form__input"
+                id="person-mail"
+                type="email"
+                name="person-mail"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/icon.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label class="modal-form__label" for="person-coment"
+              >Коментар</label
+            >
+            <textarea
+              class="modal-form__coment"
+              name="person-coment"
+              id="person-coment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </form>
+          <div class="checkbox">
+            <label class="checkbox__label" for="terms-checkbox">
+              <input
+                class="checkbox__input visually-hidden"
+                id="terms-checkbox"
+                type="checkbox"
+                name="terms-checkbox"
+              />
+              <svg class="checkbox__icon" width="16px" height="15px">
+                <use href="./images/icon.svg#icon-check"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a class="checkbox__link" href="#">Умови договору</a>
+            </label>
+          </div>
+          <button class="hero__button" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
