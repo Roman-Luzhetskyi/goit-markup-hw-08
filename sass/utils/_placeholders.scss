@@ -20,4 +20,8 @@
         color: var(--light-text-color);
         background: var(--brand-color);
     }
+
+        @media screen and (max-width: 320px)  {
+            font-size: 13px;
+        }
 }
