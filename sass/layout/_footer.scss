@@ -18,5 +18,8 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 165px;
+    }
+@media screen and (min-width: 1200px) {
+    text-align: left;
 }
 }

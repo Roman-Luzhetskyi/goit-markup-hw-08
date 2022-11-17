@@ -43,19 +43,6 @@
 }
 .site-nav__link--current {
     color: var(--brand-color);
-    position: relative;
-}
-
-.site-nav__link--current::after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    bottom: -1px;
-    left: 0;
-    position: absolute;
-    background-color: var(--brand-color);
-    border-radius: 2px;
 }
 
 .header__burger-menu {

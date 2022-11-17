@@ -11,12 +11,13 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--gallery-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
 
     @media screen and (min-width: 1200px) {
             font-size: 36px;
             line-height: calc(42/36);
+            margin-bottom: 50px;
         }
 }
 .section--none-padding-top {

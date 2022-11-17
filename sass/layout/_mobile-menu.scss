@@ -65,6 +65,11 @@
             color: var(--brand-color);
     }
 }
+
+.mobile-menu__link--current{
+    color: var(--brand-color);
+}
+
 .mobile-menu-contacts {
     display: flex;
     flex-direction: column;
