@@ -595,11 +595,6 @@ p {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .team {
-    margin: -15px;
-  }
-}
 
 .team__item {
   list-style: none;
@@ -620,6 +615,7 @@ p {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: auto;
   }
 }
 
